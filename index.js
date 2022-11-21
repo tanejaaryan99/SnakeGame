@@ -4,8 +4,8 @@ let ctx = canvas.getContext('2d');
 let cellSize = 50;
 let snakeCells = [[0, 0]];
 // let snakeCells = [[0, 0], [50, 0], [100, 0]];
-let boardWidth = 1000;
-let boardHeight = 600;
+let boardWidth = 1497;
+let boardHeight = 690;
 let foodCells = generateRandomCoords();
 let direction = 'right';
 let gameOver = false;
@@ -101,8 +101,8 @@ function draw() {
         clearInterval(intervalID);
         ctx.fillStyle = 'white';
         ctx.font = '50px sans-serif';
-        ctx.fillText(`Game over`, 1000 / 3, 600 / 2);
-        ctx.fillText(`Your score : ${score}`, 1000 / 3, 600 / 1.5);
+        ctx.fillText(`Game over`, boardWidth / 3, boardHeight / 2);
+        ctx.fillText(`Your score : ${score}`, boardWidth / 3, boardHeight / 1.5);
         return;
         // console.log("GameOver")
     }
