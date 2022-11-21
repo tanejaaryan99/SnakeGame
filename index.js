@@ -100,7 +100,8 @@ function draw() {
         clearInterval(intervalID);
         ctx.fillStyle = 'white';
         ctx.font = '50px sans-serif';
-        ctx.fillText('Game Over', 1000 / 3, 600 / 2);
+        ctx.fillText(`Game over`, 1000 / 3, 600 / 2);
+        ctx.fillText(`Your score : ${score}`, 1000 / 3, 600 / 4);
         return;
         // console.log("GameOver")
     }
