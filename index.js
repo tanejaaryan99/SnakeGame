@@ -80,6 +80,7 @@ function update() {
         //updating food cells
         foodCells = generateRandomCoords();
         // snakeCells.push([foodCells[0], foodCells[1]]);
+        score++;
     }
     else {
         snakeCells.shift();
@@ -101,7 +102,7 @@ function draw() {
         ctx.fillStyle = 'white';
         ctx.font = '50px sans-serif';
         ctx.fillText(`Game over`, 1000 / 3, 600 / 2);
-        ctx.fillText(`Your score : ${score}`, 1000 / 3, 600 / 4);
+        ctx.fillText(`Your score : ${score}`, 1000 / 3, 600 / 1.5);
         return;
         // console.log("GameOver")
     }
